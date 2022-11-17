@@ -4,7 +4,7 @@ Electron 计数器，看看你的电脑上有多少套壳浏览器😎
 
 ## 原理
 
-经过研究发现，使用航天框架编写的程序在主目录下都会有 `LICENSES.chromium.html` 和 `LICENSE.electron.txt` 或者以 `chrome` 开头的文件，通过这种方式我们可以很快地辨认出该应用程序是否使用了航天框架
+经过研究发现，使用航天框架编写的程序在主目录下都会有 `LICENSES.chromium.html` 和 `LICENSE.electron.txt` 或者以 `chrome` 开头的文件，通过这种方式我们可以很快地辨认出该应用程序是否使用了航天框架。
 
 脚本使用遍历的方式，先遍历注册表本机所有已安装应用的目录，再至根目录遍历文件，如果发现有 `LICENSES.chromium.html` 或者以 `chrome` 开头的文件，那么就认为该应用程序使用了航天框架。
 
